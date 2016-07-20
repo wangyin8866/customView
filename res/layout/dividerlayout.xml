@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#22444444"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="application_logo" />
+
+    <com.example.customimageview.view.IcsLinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/divider"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <Button
+            android:id="@+id/btn_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff0000"
+            android:text="button_1" />
+
+        <Button
+            android:id="@+id/btn_second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ff00"
+            android:text="button_2" />
+
+        <Button
+            android:id="@+id/btn_third"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0000ff"
+            android:text="button_3" />
+    </com.example.customimageview.view.IcsLinearLayout>
+
+</LinearLayout>
